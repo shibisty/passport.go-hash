@@ -1,0 +1,23 @@
+{
+    "$schema": "https://raw.githubusercontent.com/shibisty/gtr/main/schema/gtr.schema.json",
+    "name": "passport-hash",
+    "version": "0.1.0",
+    "description": "Password hashing for passport: argon2id (default) and bcrypt, verifying pbkdf2 hashes too",
+    "license": "MIT",
+    "repository": "github:shibisty/passport.go-hash",
+    "engines": {
+        "go": ">=1.23"
+    },
+    "dependencies": {
+        "golang.org/x/crypto": ">=0.36.0"
+    },
+    "devDependencies": {
+        "passport": "github:shibisty/passport.go"
+    },
+    "peerDependencies": {
+        "passport": "^0.1"
+    },
+    "scripts": {
+        "test": "go test ./..."
+    }
+}
