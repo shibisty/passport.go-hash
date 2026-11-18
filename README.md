@@ -1,4 +1,4 @@
-# passport-hash
+# @passport/hash
 
 Password hashing for [`passport`](https://github.com/shibisty/passport.go): **argon2id**
 (the default, OWASP's first choice) and **bcrypt**, with one `Verify` for every format
@@ -9,7 +9,7 @@ the core's `passport/passwordhash` (PBKDF2) uses only the standard library.
 ## Installation
 
 ```bash
-gtr add github:shibisty/passport.go github:shibisty/passport.go-hash
+gtr add passport @passport/hash
 ```
 
 `passport` is a peer dependency (`^0.1`). Go 1.23+.
@@ -17,7 +17,7 @@ gtr add github:shibisty/passport.go github:shibisty/passport.go-hash
 ## Usage
 
 ```go
-import passhash "passport-hash"
+import passhash "passport/hash"
 
 hash, err := passhash.Hash(password) // $argon2id$v=19$m=19456,t=2,p=1$<salt>$<key>
 
@@ -27,7 +27,7 @@ if ok && passhash.NeedsRehash(stored) {      // another algorithm or weaker para
 }
 ```
 
-With `passport-local`, check the password in the `VerifyFunc` and rehash there.
+With `@passport/local`, check the password in the `VerifyFunc` and rehash there.
 
 | Hasher | Format | Defaults |
 |---|---|---|

@@ -8,7 +8,7 @@
 //	    stored, _ = passhash.Hash(password)        // save it
 //	}
 //
-// gtr package: passport-hash. It is apart from the passport core because it
+// gtr package: @passport/hash. It is apart from the passport core because it
 // needs golang.org/x/crypto, while the core uses only the standard library
 // (passport/passwordhash: PBKDF2).
 package passhash
