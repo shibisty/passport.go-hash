@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.2.1 — 2026-11-19
+
 ### Changed
 - Renamed from `passport-hash` to `@passport/hash` (gtr ADR-0012): `gtr add @passport/hash`, `import "passport/hash"`; published to the gtr registry. Dependencies on other passport packages are registry ranges (`^0.2`) instead of `github:` sources.
 
